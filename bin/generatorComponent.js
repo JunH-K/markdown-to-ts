@@ -28,7 +28,7 @@ fs.readdir(currentDir, (err, files) => {
 | productName | string       | 상품명      | product_name |
 | price       | number       | 가격        | price      |
 | test        | string       | 테스트      | test       |
-| argsFunc    | (args)=>void | 테스트      | test       |`;
+| argsFunc    | (args:number)=>void | 테스트      | test       |`;
     //create md
     fs.writeFile(mdPath, content, (err) => {
       if (err) {
