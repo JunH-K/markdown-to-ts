@@ -1,6 +1,6 @@
 {
   "name": "markdown-to-ts",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Creating Types, tsx with Markdown",
   "main": "./bin/index.js",
   "scripts": {
