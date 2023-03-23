@@ -1,6 +1,6 @@
 # Markdown Converts
 
-Converts a Markdown file to a type or TSX.
+Create type,tsx based on the markdown table.
 
 > Install
 
