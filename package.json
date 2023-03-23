@@ -1,0 +1,40 @@
+{
+  "name": "markdown-to-ts",
+  "version": "0.0.4",
+  "description": "Creating Types, tsx with Markdown",
+  "main": "./bin/index.js",
+  "scripts": {
+    "cli": "node bin/index.js"
+  },
+  "bin": {
+    "md-cli": "./bin/index.js"
+  },
+  "keywords": [
+    "markdown to tsx",
+    "markdown to typescript",
+    "typescript generator",
+    "type generator",
+    "type management"
+  ],
+  "files": [
+    "bin/functions.js",
+    "bin/generatorComponent.js",
+    "bin/generatorType.js",
+    "bin/index.js",
+    "readme.md"
+  ],
+  "author": "Jun",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JunH-K/markdown-to-ts"
+  },
+  "homepage": "https://github.com/JunH-K/markdown-to-ts.git",
+  "bugs": {
+    "url": "https://github.com/JunH-K/markdown-to-ts/issues",
+    "email": "k.developer@kakao.com"
+  },
+  "dependencies": {
+    "prettier": "^2.8.6"
+  }
+}
