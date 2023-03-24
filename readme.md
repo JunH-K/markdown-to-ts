@@ -10,14 +10,14 @@ npm i -g markdown-to-ts
 
 > Usage
 
-1. create sample markdown.
+1. If there is no xxx.type.md file in the current path, Sample.type.md is created.
 ```bash
 md-cli type
 ```
 * Sample.type.md
 
 ```md
-| key         | type         | description | back_field  |
+| key         | type         | description | etc  |
 |-------------|--------------|-------------|-------------|
 | name?       | string       | 이름        | name        |
 | id          | number       | ID          | product_id |
@@ -25,11 +25,11 @@ md-cli type
 | productName | string       | 상품명      | product_name |
 | price       | number       | 가격        | price      |
 | test        | string       | 테스트      | test       |
-| argsFunc    | (args:number)=>void | 테스트      | test       |
+| argsFunc    | (args:number)=>void | 함수      | test       |
 ```
 
 
-2. markdown to type.
+2. Reads the xxx.type.md file in the current path and creates the xxx.ts file.
 ```bash
 md-cli type
 ```
@@ -48,7 +48,7 @@ export default SampleType;
 
 ```
 
-3. markdown to tsx
+3. Reads the xxx.type.md file in the current path and creates the xxx.tsx file.
 ```bash
 md-cli component
 ```
