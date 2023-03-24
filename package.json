@@ -21,6 +21,7 @@
     "bin/generatorComponent.js",
     "bin/generatorType.js",
     "bin/index.js",
+    "bin/content.js",
     "readme.md"
   ],
   "author": "Jun",
