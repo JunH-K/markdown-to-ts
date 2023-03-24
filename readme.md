@@ -2,6 +2,10 @@
 
 Create type,tsx based on the markdown table.
 
+> Supported Node.js
+
+Supports versions 10 and above
+
 > Install
 
 ```bash
