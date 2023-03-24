@@ -1,6 +1,11 @@
 # Markdown Converts
 
+[![npm](https://img.shields.io/npm/v/markdown-to-ts)](https://www.npmjs.com/package/markdown-to-ts)
+[![Downloads](https://img.shields.io/npm/dm/markdown-to-ts.svg)](http://npm-stat.com/charts.html?package=markdown-to-ts)
+
 Create type,tsx based on the markdown table.
+
+
 
 > Supported Node.js
 
