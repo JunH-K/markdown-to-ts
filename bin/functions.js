@@ -134,7 +134,7 @@ function createMdToJsx(fs, mdFiles, path, currentDir, prettier) {
 
       let types = "";
       toArr.forEach((value) => {
-        types += `${value.key}:${value.type};//${value.description},${value.etc}\n`;
+        types += `${value.key}:${value.type};//${value.description}\n`;
       });
 
       //content

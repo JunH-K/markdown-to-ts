@@ -1,10 +1,10 @@
-const mdContent = `| key         | type         | description | etc  |
-|-------------|--------------|-------------|-------------|
-| basic?       | string  | Optional type        | name        |
-| union          | number,string       | UnionType          | product_id |
-| union2          | "name","age"       | UnionType          | product_id |
-| tuple         | [number,string]       | TupleType        | age        |
-| tuple2         | ["string",1,{}]       | TupleType        | age        |
-| argsFunc    | (args:number,args2:string)=>void | function      | test       |`;
+const mdContent = `| key         | type         | description |
+|-------------|--------------|-------------|
+| basic?       | string  | Optional type        | 
+| union          | number,string       | UnionType          | 
+| union2          | "name","age"       | UnionType          | 
+| tuple         | [number,string]       | TupleType        | 
+| tuple2         | ["string",1,{}]       | TupleType        | 
+| argsFunc    | (args:number,args2:string)=>void | function      | `;
 
 exports.mdContent = mdContent;
