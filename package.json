@@ -14,7 +14,9 @@
     "markdown to typescript",
     "typescript generator",
     "type generator",
-    "type management"
+    "type management",
+    "react",
+    "next.js"
   ],
   "files": [
     "bin/functions.js",
