@@ -27,15 +27,14 @@ md-cli type
 * Sample.type.md
 
 ```md
-| key         | type         | description | etc  |
-|-------------|--------------|-------------|-------------|
-| name?       | string       | 이름        | name        |
-| id          | number       | ID          | product_id |
-| age         | number       | 나이        | age        |
-| productName | string       | 상품명      | product_name |
-| price       | number       | 가격        | price      |
-| test        | string       | 테스트      | test       |
-| argsFunc    | (args:number)=>void | 함수      | test       |
+| key         | type         | description | 
+|-------------|--------------|-------------|
+| basic?       | string                      | Optional type      | 
+| union        | number,string         | UnionType          | 
+| union2      | "name","age"          | UnionType          | 
+| tuple         | [number,string]       | TupleType          | 
+| tuple2        | ["string",1,{}]        | TupleType          | 
+| argsFunc    | (args:number,args2:string)=>void   | function      |
 ```
 
 
@@ -46,13 +45,12 @@ md-cli type
 * SampleType.ts
 ```typescript
 type SampleType = {
-  name?: string; //이름
-  id: number; //ID
-  age: number; //나이
-  productName: string; //상품명
-  price: number; //가격
-  test: string; //테스트
-  argsFunc: (args:number) => void; //테스트
+    basic?: string; //Optional type
+    union: number | string; //UnionType
+    union2: 'name' | 'age'; //UnionType
+    tuple: [number, string]; //TupleType
+    tuple2: ['string', 1, {}]; //TupleType
+    argsFunc: (args: number, args2: string) => void; //function
 };
 export default SampleType;
 
@@ -66,18 +64,17 @@ md-cli component
 * Sample.tsx
 ```typescript
 type Props = {
-  name?: string; //이름
-  id: number; //ID
-  age: number; //나이
-  productName: string; //상품명
-  price: number; //가격
-  test: string; //테스트
-  argsFunc: (args:number) => void; //테스트
-  [key: string]: any;
+    basic?: string; //Optional type}
+    union: number | string; //UnionType}
+    union2: 'name' | 'age'; //UnionType}
+    tuple: [number, string]; //TupleType}
+    tuple2: ['string', 1, {}]; //TupleType}
+    argsFunc: (args: number, args2: string) => void; //function}
+    [key: string]: any;
 };
 
 function Sample(props: Props) {
-  return <div>Sample Component</div>;
+    return <div>Sample Component</div>;
 }
 
 export default Sample;
