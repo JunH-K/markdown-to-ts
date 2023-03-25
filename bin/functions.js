@@ -10,14 +10,20 @@ function markdownTableToObjects(markdownTable) {
     .split("|")
     .map((header) => header.trim())
     .filter((header) => header !== "");
+
   const objects = rows.map((row) => {
     const values = row
       .split("|")
       .map((value) => value.trim())
       .filter((value) => value !== "");
+
     const object = {};
     headers.forEach((header, index) => {
-      object[header] = values[index];
+      let type = values[index].replace(
+        /^([a-zA-Z"']+),([a-zA-Z"']+)$/,
+        "$1|$2"
+      );
+      object[header] = type;
     });
     return object;
   });
@@ -87,7 +93,7 @@ function createMdToType(fs, mdFiles, path, currentDir, prettier) {
 
       let types = "";
       toArr.forEach((value) => {
-        types += `${value.key}:${value.type};//${value.description},${value.etc}\n`;
+        types += `${value.key}:${value.type};//${value.description}\n`;
       });
 
       if (!fs.existsSync(currentDir)) {
