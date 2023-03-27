@@ -2,6 +2,10 @@
 
 [![npm](https://img.shields.io/npm/v/markdown-to-ts)](https://www.npmjs.com/package/markdown-to-ts)
 [![Downloads](https://img.shields.io/npm/dt/markdown-to-ts.svg)](http://npm-stat.com/charts.html?package=markdown-to-ts)
+[![license](https://img.shields.io/npm/l/markdown-to-ts)](https://img.shields.io/npm/l/markdown-to-ts)
+
+
+
 
 Create type,tsx based on the markdown table.
 
